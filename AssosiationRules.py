@@ -44,7 +44,7 @@ grouped = df.groupby(id_column)[item_column].apply(
 
 transactions = grouped['Items'].tolist()
 if not transactions:
-    raise ValueError("Keine Transaktionen gefunden. Bitte überprüfen Sie die Daten.")
+    raise ValueError("Keine Transaktionen gefunden. Bitte überprüfe die Daten.")
 
 # -- 4) TransactionEncoder anwenden -------------------------------------------
 
